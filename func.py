@@ -1,14 +1,3 @@
-# new func 'name' replaces old var num and nam, argument variables replace input variables, work width drawing_name_part_1 / 2, new floor counter
-
-from sys import argv
-
-(script, discipline, drawing_content, drawing_category, house_number,
-house_part, house_floor, drawing_name, number_of_floors) = argv
-
-number_of_floors = int(number_of_floors)
-house_floor = int(house_floor)
-
-
 def drawing_number_concatenate(_count, var_1, var_2, var_3, var_4, 
     var_5, var_6):
     """ this function concatenates the whole drawing number,
@@ -76,34 +65,3 @@ def drawing_number_and_name_concatenate(_count, list_1, list_2, list_3):
         list_3.append(z)
 
     return list_3
-
-# empty lists
-list_drawing_number_concatenate = [] 
-list_drawing_name_part_1 = []
-list_drawing_name_part_2 = []
-list_drawing_name_concatenate = []
-list_drawing_number_and_name_concatenate = []
-
-list_drawing_number_concatenate = drawing_number_concatenate(number_of_floors,
-    discipline, drawing_content, drawing_category, house_number, house_part,
-    house_floor    
-    )
-
-list_drawing_name_part_1 = drawing_name_part_1(
-    number_of_floors, list_drawing_name_part_1, drawing_name
-    )
-
-list_drawing_name_part_2 = drawing_name_part_2(
-    number_of_floors, list_drawing_name_part_2, drawing_name
-    )
-list_drawing_name_concatenate = drawing_name_concatenate(
-    number_of_floors, list_drawing_name_part_1, list_drawing_name_part_2,
-    list_drawing_name_concatenate
-    )
-list_drawing_number_and_name_concatenate = drawing_number_and_name_concatenate(
-    number_of_floors, list_drawing_number_concatenate, 
-    list_drawing_name_concatenate, list_drawing_number_and_name_concatenate
-    )
-
-for i in range (0, number_of_floors):
-    print(list_drawing_number_and_name_concatenate.pop(0))
