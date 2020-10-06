@@ -1,10 +1,4 @@
-# write as functions
-
-    # str to upper(), split()
-    drawing_name = drawing_name.upper().split()
-
-    # pop list to int / str
-    num = int(drawing_name.pop()); nam = drawing_name.pop()
+# hur stor får en funktion vara?
 
 # write a class with current functions
 
@@ -13,8 +7,6 @@
 # openpyxl --> excel
 
 # link class from separate folder, os path
-
-# arg var, avvakta med denna ide
 
 # foor-loops som oneliners
 
@@ -42,3 +34,15 @@ print(Rodger.getColor())
 # 2. hur kopplas skriptet ihop med en webbsida?
 
 # hur ska jag lopa hela funktionen för att få fram fler typer av planer? grund / tak mm
+
+# NOTE, done:
+
+# write as functions
+
+    # str to upper(), split()
+    drawing_name = drawing_name.upper().split()
+
+    # pop list to int / str
+    num = int(drawing_name.pop()); nam = drawing_name.pop()
+
+# arg var
